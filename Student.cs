@@ -35,11 +35,7 @@ namespace School
         }
 
         public void addStudent(float ID, String Name, String Gender)
-        {
-            if (Name)
-            {
-                
-            }
+        {   
         }
 
         //Part 4
