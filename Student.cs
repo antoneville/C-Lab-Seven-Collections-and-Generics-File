@@ -21,29 +21,11 @@ namespace School
         public String Gender { get; set; }
     }
 
-    class FirstYears : Student 
+    class Test
     {
-        private string CRN { get; set; }
-        private string lectureName { get; set; }
-        private List<Student> collect;
-
-        public FirstYears(float ID, String Name, String Gender, String CRN, String LectureName, )
-                :base(ID, Name, Gender)
+        static void main()
         {
-            this.CRN = CRN;
-            this.lectureName = LectureName;
+            Console.WriteLine();
         }
-
-        public void addStudent(float ID, String Name, String Gender)
-        {   
-        }
-
-        //Part 4
-        //private static List<string> alFileTypes =
-        //new List<string> {"css","gif","htm","html","txt","xml"};
-
-
     }
-
-
 }

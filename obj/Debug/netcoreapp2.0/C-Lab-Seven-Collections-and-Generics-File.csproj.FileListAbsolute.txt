@@ -1,0 +1,3 @@
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.csproj.CoreCompileInputs.cache
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.AssemblyInfoInputs.cache
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.AssemblyInfo.cs
