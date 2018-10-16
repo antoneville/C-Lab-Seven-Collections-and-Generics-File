@@ -14,10 +14,12 @@ namespace School
         {
             this.CRN = CRN;
             this.lectureName = LectureName;
+            this.collect = new List<Student>();
         }
 
-        public void addStudent(float ID, String Name, String Gender)
+        public void addStudent(Student e)
         {
+            collect.Add(e);            
         }
 
         //Part 4
