@@ -1,3 +1,10 @@
 C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.csproj.CoreCompileInputs.cache
 C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.AssemblyInfoInputs.cache
 C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.AssemblyInfo.cs
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\bin\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.deps.json
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\bin\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.runtimeconfig.json
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\bin\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.runtimeconfig.dev.json
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\bin\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.dll
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\bin\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.pdb
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.dll
+C:\projects\C-Lab-Seven-Collections-and-Generics-File\obj\Debug\netcoreapp2.0\C-Lab-Seven-Collections-and-Generics-File.pdb

@@ -11,7 +11,7 @@ namespace School
         public string lectureName { get; set; }
         private List<Student> collect;
 
-        public StudentClass(float ID, String Name, String Gender, String CRN, String LectureName)
+        public StudentClass(String CRN, String LectureName)
         {
             this.CRN = CRN;
             this.lectureName = LectureName;
@@ -37,9 +37,9 @@ namespace School
 
         public IEnumerator GetEnumerator()
         {
-            foreach (Student students in collect)
+            foreach (Student student in collect)
             {
-                yield return students;
+                yield return student;
             }
         }
 
@@ -63,10 +63,10 @@ namespace School
             get
             {
                 Student student = null;
-                int count = collect.Count(s => s.ID == stuID);
+                int count = collect.Count(s => s.Id == stuID);
                 if (count == 1)
                 {
-                    student = collect.Where(s => s.ID == stuID).First();
+                    student = collect.Where(s => s.Id == stuID).First();
                     return student;
                 }
                 else
@@ -79,21 +79,50 @@ namespace School
     }
     class Test
     {
-        public static void main()
+        public static void Main()
         {
-            Student r1 = new Student(3455, "John Marcus", "Male");
-            Console.WriteLine(r1);
+            try
+            {
 
-            r1.ID = 29;
-            Console.WriteLine(r1.ID);
+                Student r1 = new Student(3455, "John Marcus", "Male");
+                Student r2 = new Student(331, "Spider Pig", "Male");
 
-            r1.Name = "Elizabeth Walker";
-            Console.WriteLine(r1.Name);
+                StudentClass s2 = new StudentClass("3", "Thomas Coleman");
+                StudentClass s7 = new StudentClass("5", "Marcus Alonso");
 
-            r1.Gender = "Female";
-            Console.WriteLine(r1.Gender);
+                s7.addStudent(r1);
+                s7.addStudent(r2);
 
-            Console.WriteLine(r1);
+
+                Console.WriteLine("****************");
+                Console.WriteLine("Student Details: ");
+                Console.WriteLine(r1);
+
+                r1.Id = 29;
+                r1.Name = "Elizabeth Walker";
+                r1.Gender = "Female";
+
+                Console.WriteLine("\n************************");
+                Console.WriteLine("Student Details Changed:");
+                Console.WriteLine(r1);
+
+                foreach (Student student in s7)
+                {
+                    Console.WriteLine(student);
+                }
+
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            catch (Exception er)
+            {
+                Console.WriteLine(er.Message);
+            }
+
+
 
         }
     }
