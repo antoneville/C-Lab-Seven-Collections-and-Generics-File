@@ -20,16 +20,20 @@ namespace School
 
         public void addStudent(Student e)
         {
-            try
+            if (collect == null)                               
             {
-                if (e == null)
+                collect.Add(e);                          
+            }
+            else
+            {
+                if ((collect.Count(s => s.Id == e.Id)) == 1)                         
+                {
+                    throw new ArgumentException("Error student " + e.Name + " is already in the class");
+                }
+                else
                 {
                     collect.Add(e);
                 }
-            }
-            catch (StackOverflowException ex)
-            {
-                Console.WriteLine("List out of bounds: {0}", ex);
             }
 
 
@@ -106,10 +110,15 @@ namespace School
                 Console.WriteLine("Student Details Changed:");
                 Console.WriteLine(r1);
 
+                Console.WriteLine("\nName of Class: {0} \t| Name of Lecturer: {1}", s7.CRN, s7.lectureName);
                 foreach (Student student in s7)
                 {
+                    Console.WriteLine("\n***********************");
                     Console.WriteLine(student);
                 }
+
+                Student findStu1 = s7[1];
+                Console.WriteLine("Found " + findStu1); 
 
             }
             catch (ArgumentException e)
@@ -121,9 +130,6 @@ namespace School
             {
                 Console.WriteLine(er.Message);
             }
-
-
-
         }
     }
 }

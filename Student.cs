@@ -16,10 +16,6 @@ namespace School
             this.Gender = gender;
         }
 
-        public Student()
-        {
-        }
-
         public override string ToString()
         {
             return String.Format("The ID: {0} \nThe Name: {1}\nThe Gender: {2}", Id, Name, Gender);
